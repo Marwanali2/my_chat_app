@@ -6,11 +6,13 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
+
       style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(Colors.white),
           minimumSize: MaterialStateProperty.all(Size(double.infinity,40)),
           shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)))
       ),
+
       onPressed: onPressed,
       child: Text(
         "$text",
